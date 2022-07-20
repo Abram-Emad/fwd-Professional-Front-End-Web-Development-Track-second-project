@@ -21,7 +21,7 @@ generate.addEventListener('click',() => {
     const feelings = document.getElementById('feelings');
     // Create a newdate instance dynamically with JS
     let d = new Date();
-    let newDate = d.getDate()+' / '+ d.getMonth()+' / '+ d.getFullYear();
+    let newDate = d.getMonth() +1 +'/'+d.getDate()+'/'+d.getFullYear();
     let data = {
         zipCode: zipCode.value,
         content: feelings.value,
